@@ -1,0 +1,91 @@
+.title{
+    font-family: Spartan,sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 530%;
+line-height: 84px;
+margin-top:19%;
+color: #FFFFFF;
+margin-left: 6%;
+
+}
+/* body{
+    overflow:hidden;
+} */
+.block{
+    background: green;
+    width: 30%;
+    height: 500px; 
+}
+/* .container{
+     background: green;  
+     left:-10%;
+     top:31%;
+     
+} */
+.form{
+    height: 105px;
+background: #D3D3D3;
+border-radius: 24px;
+margin-top: 23%;
+margin-left: 17%;
+width: 75%;
+font-size:34px;
+padding-left: 4%;
+font-family: Consolas;
+}
+.answer{
+    font-family: PT Sans,sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 45px;
+    color: #FFFAFA;
+    margin-top: 3%;
+    margin-left: 7%;    }
+nav{
+    position: fixed;
+    top:0px;
+    /* background: green; */
+    height: 90px;
+    width:30%;
+    right: 7%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+.text_nav{
+    font-family: Roboto,sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 47px;
+    margin-left: 8%;
+    color: #FFFFFF;
+}
+img{
+     margin-left:49%;
+    margin-top: -30%; 
+    height: 10%;
+}
+.text_nav:hover{
+    cursor:pointer;
+}
+.brain{
+    /* margin-top:-240%;
+    margin-left:-230%; */
+    font-size:32px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+/* @media(max-width:1200px){
+    .container-lg{
+        background:green;
+    }
+} */
+.answ{
+    width: 0%;
+}
+#sumb:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,330 @@
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+ <script>
+        bra=0;
+    function resize()
+    {
+    bra = document.body.clientWidth;
+    bra = bra/1600;
+    $("#container").css("transform", "scale("+bra+")");
+    }
+    
+    $(document).ready(function(){
+    $(window).resize(function() { resize(); });
+            resize();
+           // do{
+           // var a = prompt('САЙТ ФИКСИТСЯ СОРЕ','');
+          //  a=parseInt(a,10);
+            
+          //  }while(a!=100);
+    });
+    window.addEventListener("mousewheel", function(e) {
+        if (e.ctrlKey) {
+          e.preventDefault();
+          return false;
+    }
+  });
+
+ 
+  </script>
+   <script type="text/javascript">
+    (function () {
+        detectPortrait();
+        $(window).resize(function() {
+            detectPortrait("#mainView");
+        });
+
+
+        function detectPortrait(mainDiv) {
+            if (screen.width < screen.height) {
+                $(mainDiv).addClass("portrait_mode");
+            }
+            else {
+                $(mainDiv).removeClass("portrait_mode");
+            }
+        }
+    })();
+</script>
+<style type="text/css">
+    .portrait_mode {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <link rel="stylesheet" href="led.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="vendor/js/popper.min.js" async></script>
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <script src="vendor/js/bootstrap.min.js" defer></script>
+   
+    <script src="led.js"></script>
+        <style>
+	body {
+   	   background: black;
+	   color: #fff;
+   }
+            @media (min-width:1200px){
+    body{
+        width: 1400px;
+        height: 800px;
+    }
+}
+
+    </style>
+    <script>
+      
+    $(document).ready(function(){
+         
+        $('.img').hide();
+        $('.tet').css('margin-left','-1000px');
+       /*  $(".but").css("border-radius","15px");*/
+       
+      /*  $('.but').hide();*/
+          /*  $("#rt").stop().slideDown(1000);*/
+        $(".but").stop().slideDown(1000);
+        $(".img").stop().slideDown(1000);
+       /* $('.but').stop().animate({
+            "margin-left":"0px"
+        },1000
+        );*/
+});
+
+ $(window).load(function(){
+             if($(window).width() <= '768'){
+                  /* $('.big').css('width','600px');*/
+                   $("#rt").hide();
+                
+                  
+                   $('.but').css("margin-left","-1500px");
+                   $(window).scroll(function(){
+            if(($(window).scrollTop()>120)&&($(window).scrollTop()<220)){
+                $('#rt').stop().fadeIn(1500);
+               
+                
+            };
+          if($(window).scrollTop()>260){
+               
+                 $('.but').stop().animate({
+            "margin-left":"0px"
+        },500
+        );
+            };
+        });
+        
+     $('.tet').stop().animate(
+        {
+          
+            'margin-left':'5px'
+        },
+         1000
+     );
+   
+        };
+        if($(window).width() > '1200'){
+            $("#rt").hide();
+            $('.big').css({
+                'padding-top': '70px',
+                 'height': '900px',
+                'width': '2000px'
+            });
+              $('.tet').stop().animate(
+        {
+        
+            'margin-left':'20%'
+        },
+         1000
+     );
+        $('#rt').stop().fadeIn(1500);
+         };
+       if(($(window).width() > '756')&&($(window).width() < '1200')){
+           $('bgj').css({
+               'font-size':'170px'
+           });
+            $('big').css({
+               'padding-left':'180px',
+               'padding-top':'100px'
+           });
+              $('.tet').stop().animate(
+        {
+        
+            'margin-left':'2%'
+        },
+         1000
+     );
+         };
+         });
+    </script>
+</head>
+<body>
+    <div class="big"> <div class="tet"><p class="bgj">Hello,</p>
+    <p class="bgj fj">World!</p></div></div> 
+   <div class="sm">
+    <div class="container">
+        <div class="row mb-2">
+           <div class="col-lg-9 col-md-9 col-xs-12">
+            <h1 class="zag">Привет,меня зовут Васильев Кирилл</h1>
+             
+            </div>
+             
+             <div class="col-lg-9 col-md-8 col-xs-12">
+            <p class="txt" id="rt">Я начинающий веб-дизайнер. Чтобы совместить приятное с полезным, я предлагаю вам заказать у меня сайт или лэндинг почти за бесплатно. Ваш сайт мне нужен будет для 
+портфолио, от чего ваш сайт только выиграет, ведь мне нужно крутое портфолио. Напишите мне в одну из соц. сетей, чтобы обсудить ваш проект:</p>
+              
+            </div>
+        <div class="vcm">
+        <div class="row mb-3">
+            <div class="col-lg-4 col-md-4 ">
+
+            <button onclick="window.location.href = 'https://vk.com/larkes123';" class="but fm ytt" class="but yt" id="er">Написать в VK</button>
+        
+             </div>
+             <div class="col-lg-4 col-md-4 ">
+            <button onclick="window.location.href = 'https://vk.com/larkes123';" class="but fm fmm ytt" id="er">Написать в FC</button>
+             </div>
+              <div class="col-lg-4 col-md-4 ">
+            <button onclick="window.location.href = 'https://www.instagram.com/larkes11/';" class="but fm fmj yttt" id="er">Написать в IG</button>
+             </div>
+            </div>
+            </div>
+         </div>
+        </div>
+        </div>
+        
+
+ <div class="img"></div>
+>
+     
+  
+    <style>
+        .big{
+            width:100%;
+            
+        }
+        .fmj{
+            background:#39142D;
+        }
+        .fmm{
+            background:#5162B9;
+        }
+       .sm{
+                margin-top:50px;
+            }
+    .img{
+        width: 400px;
+        height: 407px;
+        background:url('vector-creator (3).png');
+          background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+        @media(max-width:762px){
+            .vcm{
+                 background:url('https://png.pngtree.com/element_our/png_detail/20180921/stary-night-landscape-vector-illustration-png_110487.jpg');
+                 margin-top:30px;
+                  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+            border:2px solid white;
+            border-radius:30px;
+            padding-left: 15px;
+            }
+            .bg{
+              
+                margin-top:30px;
+          
+                
+            }
+         
+            .zag{
+                font-size:38px;
+                font-style:roboto,sans-serif;
+                line-height:80px;
+            }
+            .txt{
+                margin-top:20px;
+                font-size:25px;
+                line-height:40px;
+            }
+            .but{
+                display:flex;
+               align-items: center;
+               margin-left:20px;
+               width:325px;
+               padding-left:60px;
+            }
+               .big{
+    
+    padding-top: 180px;
+    padding-left: 30px;
+    height: 700px;
+    margin-left:-20px;
+    width:390px;
+}
+    .bgj{
+          font-size:110px;
+          font-weight:bold;
+          
+      }
+      .zag{
+          font-size:35px;
+          line-height:50px;
+      }
+        }
+   
+    @media(min-width:1200px){
+      .bgj{
+        font-size: 220px;
+}  
+     .big{
+    padding-top: 70px;
+    /*padding-left: 180px;*/
+     
+       
+}
+    }
+.bgj{
+    font-family: monospace,sans-serif;
+     font-weight: bolder;
+}
+        .big{
+            background: url('bg.svg');
+
+            
+
+        }
+        .bg{
+            background:green;
+        }
+    @media(min-width:576px){
+        @media(max-width:1200px){
+            .vcm{
+                padding-left:100px;
+            }
+            .bgj{
+          font-size: 170px;
+         
+          
+      }
+        .big{
+    padding-top: 100px;
+    padding-left: 180px;
+            height:700px;
+            width:900px;
+}
+        }
+        
+    }
+    
+    </style>
+</body>
+</html>
+
